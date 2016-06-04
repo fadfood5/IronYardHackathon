@@ -6,10 +6,11 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var bootstrap = require("express-bootstrap-service");
 var router = express.Router();
-var Firebase = require("firebase");
+//var Firebase = require("firebase");
 
 var contact = require('./routes/contact');
 var routes = require('./routes/index');
+//var landing = require('./routes/landing');
 
 var app = express();
 
@@ -36,6 +37,7 @@ app.use(bootstrap.serve);
 
 app.use('/', routes);
 app.use('/contact', contact);
+//app.use('/landing', landing);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

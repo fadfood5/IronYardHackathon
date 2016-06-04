@@ -1,7 +1,7 @@
 extends ../node_modules/jade-bootstrap/_bootstrap
 append styles
 	// Custom styles for this template 
-	link(href="../css/carousel.css", rel="stylesheet")
+	link(href="../css/cover.css", rel="stylesheet")
 block body
 	.navbar-wrapper
 		.container
@@ -14,13 +14,15 @@ block body
 							span.icon-bar
 							span.icon-bar
 							
-						a(class="navbar-brand", href='/') Fadi Bitar
+						a(class="navbar-brand", href='/') Iron Yard
 					#navbar.navbar-collapse.collapse
 						ul.nav.navbar-nav
 							li.active
 								a(href='/') Home
 							li
 								a(href='contact') Contact
+							li
+								a(href= 'landing') Landing
 							
 								
 							
@@ -33,14 +35,14 @@ block body
 	.container.marketing
 		// Three columns of text below the carousel
 		.row
-			a(href='education', role='button')
+			a(href='/', role='button')
 				.col-lg-4
 					img.img-circle(src='../images/usf.jpg', alt='Generic placeholder image', width='140', height='140')
 					h2 Education
 					p
-						| Current Junior at the University of South Florida pursuing a dual degree in Computer Science and Philosophy.
+						| Built in St Pete
 					p
-						a.btn.btn-default(href='education', role='button') Click for more
+						a.btn.btn-primary(href='education', role='button') Click for more
 		// START FEATURETTES
 		// /END FEATURETTES
 		// FOOTER

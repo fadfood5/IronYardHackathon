@@ -7,13 +7,14 @@ var bodyParser = require('body-parser');
 var bootstrap = require("express-bootstrap-service");
 var router = express.Router();
 //var google = require('google');
+/*
 var GoogleMapsLoader = require('google-maps');
 //var Firebase = require("firebase");
 GoogleMapsLoader.load(function(google) {
 	GoogleMapsLoader.KEY = 'AIzaSyBExy7YPlfGG-nGG_TwZEj7i4v4q2prrj4';
 	new google.maps.Map(el, options);
 });
-
+*/
 
 var about = require('./routes/about');
 var contact = require('./routes/contact');

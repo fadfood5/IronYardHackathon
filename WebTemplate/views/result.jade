@@ -39,11 +39,9 @@ block body
 				.col-lg
 				//Google maps API
 				script(src='jquery.min.js')
-				//script(src='https://maps.google.com/maps/api/js?sensor=false')
 				script(src='https://maps.googleapis.com/maps/api/js?key=AIzaSyBExy7YPlfGG-nGG_TwZEj7i4v4q2prrj4&callback=initMap')
 				script(src='global.js')
-				
-				//var map = new google.maps.Map();
+				img(src="https://maps.googleapis.com/maps/api/staticmap?zoom=13&size=400x300&markers=27.7702,-82.6363&sensor=true")
 				#map
 				.map
 					
@@ -75,15 +73,16 @@ block body
 	//BEGIN FEAUTURETTE
 	.container.marketing
 		hr.featurette-divider
-		.row.featurette
-			.col-md-7
+		.row(align="center")
+			.col-md
 				h2.featurette-heading
-					| Contact Information
+					| YOUR VOTING PRECINCT LOCATION
 					span.text-muted
-				p.lead
-					ul
-						li	Phone: 
-						li	E-mail: 
+					p.lead
+						ul
+							li Address: 260 1st Ave S #300, St. Petersburg, FL 33701
+							li Phone: 855.399.2275
+							li E-mail: admissions@theironyard.com
 			.col-md-5
 				//img.featurette-image.img-responsive.center-block(src='../images/existentialism.jpg', alt='existentialism', width='180px', height='180px')
 		hr.featurette-divider

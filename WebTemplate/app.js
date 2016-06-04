@@ -10,7 +10,7 @@ var router = express.Router();
 
 var contact = require('./routes/contact');
 var routes = require('./routes/index');
-//var landing = require('./routes/landing');
+var about = require('./routes/about');
 
 var app = express();
 
@@ -37,7 +37,7 @@ app.use(bootstrap.serve);
 
 app.use('/', routes);
 app.use('/contact', contact);
-//app.use('/landing', landing);
+app.use('/about', about);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

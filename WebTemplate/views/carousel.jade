@@ -33,38 +33,21 @@ block body
 	//  Marketing messaging and featurettes
 	//  ==================================================
 	// Wrap the rest of the page in another container to center all the content.
-	.container.marketing
+	.container.marketing(align='center')
 		// Three columns of text below the carousel
 		.row
 				.col-lg-4
 					//img.img-circle(src='../images/usf.jpg', alt='Generic placeholder image', width='140', height='140')
 					h2 Type in your Zip Code!
-					p yo yo yo yo yo yo yo
-					| yo yosdgfadfadsfsdf
 					
 					form.form-inline(role='form')
 						.form-group
 						label(for='zip')
-							input#zip.form-control(type='zip', placeholder= 'Enter zip code here')
+							input#zip.form-control(type='zip', placeholder= 'Enter zip code here', maxlength="5")
 					p
 						a.btn.btn-primary(href='result', role='button') Search 
 							span.glyphicon.glyphicon-search
-	//BEGIN FEAUTURETTE
-	.container.marketing
-		hr.featurette-divider
-		.row.featurette
-			.col-md-7
-				h2.featurette-heading
-					| Contact Information
-					span.text-muted
-				p.lead
-					ul
-						li	Phone: 
-						li	E-mail: 
-			.col-md-5
-				//img.featurette-image.img-responsive.center-block(src='../images/existentialism.jpg', alt='existentialism', width='180px', height='180px')
-		hr.featurette-divider
-		// /END FEATURETTES
+	
 		
 		// FOOTER
 		footer

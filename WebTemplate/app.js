@@ -8,9 +8,11 @@ var bootstrap = require("express-bootstrap-service");
 var router = express.Router();
 //var Firebase = require("firebase");
 
+
+var about = require('./routes/about');
 var contact = require('./routes/contact');
 var routes = require('./routes/index');
-var about = require('./routes/about');
+var result = require('./routes/result');
 
 var app = express();
 
@@ -36,8 +38,9 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(bootstrap.serve);
 
 app.use('/', routes);
-app.use('/contact', contact);
 app.use('/about', about);
+app.use('/contact', contact);
+app.use('/result', result);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

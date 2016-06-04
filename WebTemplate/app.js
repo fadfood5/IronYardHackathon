@@ -6,6 +6,7 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var bootstrap = require("express-bootstrap-service");
 var router = express.Router();
+var Firebase = require("firebase");
 
 var contact = require('./routes/contact');
 var routes = require('./routes/index');

@@ -35,29 +35,42 @@ block body
 	// Wrap the rest of the page in another container to center all the content.
 	.container.marketing
 		// Three columns of text below the carousel
-		.row
-				.col-lg-4
+		.row(align="center")
+				.col-lg
+				//Google maps API
+				script(src='jquery.min.js')
+				//script(src='https://maps.google.com/maps/api/js?sensor=false')
+				script(src='https://maps.googleapis.com/maps/api/js?key=AIzaSyBExy7YPlfGG-nGG_TwZEj7i4v4q2prrj4&callback=initMap')
+				script(src='global.js')
+				
+				//var map = new google.maps.Map();
+				#map
+				.map
+					
+					
+					
+					
 					//img.img-circle(src='../images/usf.jpg', alt='Generic placeholder image', width='140', height='140')
 					h2 Information! 
 					table(border='1')
 							thead
 								tr.head 
-									th   one  
-									th   two  
-									th  three 
-									th  four 
+									th   this  
+									th   data  
+									th  is 
+									th  false 
 									
 							tbody(align='center')
 								tr 
-									td 1
-									td 2
-									td 3
-									td 4
+									td this
+									td data
+									td is
+									td false
 								tr 
-									td f
-									td a 
-									td d
-									td i
+									td this
+									td data 
+									td is
+									td false
 					
 	//BEGIN FEAUTURETTE
 	.container.marketing

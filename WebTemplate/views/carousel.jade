@@ -35,12 +35,14 @@ block body
 	.container.marketing
 		// Three columns of text below the carousel
 		.row
-			a(href='/', role='button')
-				.col-lg-4
-					img.img-circle(src='../images/usf.jpg', alt='Generic placeholder image', width='140', height='140')
-					h2 Education
+			.col-lg-4
+					//img.img-circle(src='../images/usf.jpg', alt='Generic placeholder image', width='140', height='140')
+					h2 Type in your Zip Code!
 					p
-						| Built in St Pete
+					form.form-inline(role='form')
+						.form-group
+						label(for='zip')
+							input#zip.form-control(type='zip', placeholder= 'Enter zip code here')
 					p
 						a.btn.btn-primary(href='education', role='button') Click for more
 		// START FEATURETTES

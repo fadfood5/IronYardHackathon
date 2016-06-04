@@ -10,7 +10,6 @@ var Firebase = require("firebase");
 
 var contact = require('./routes/contact');
 var routes = require('./routes/index');
-var users = require('./routes/users');
 
 var app = express();
 
@@ -37,7 +36,6 @@ app.use(bootstrap.serve);
 
 app.use('/', routes);
 app.use('/contact', contact);
-app.use('/users', users);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

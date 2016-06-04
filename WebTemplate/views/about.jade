@@ -1,0 +1,74 @@
+extends ../node_modules/jade-bootstrap/_bootstrap
+append styles
+	// Custom styles for this template 
+	link(href="../css/carousel.css", rel="stylesheet")
+block body
+	.navbar-wrapper
+		.container
+			nav.navbar.navbar-inverse.navbar-static-top
+				.container
+					.navbar-header
+						button(type="button" ,class="navbar-toggle collapsed", data-toggle="collapse", data-target="#navbar" ,aria-expanded="false", aria-controls="navbar")
+							span.sr-only Toggle navigation
+							span.icon-bar
+							span.icon-bar
+							span.icon-bar
+							
+						a(class="navbar-brand", href='/') The Iron Searcher
+					#navbar.navbar-collapse.collapse
+						ul.nav.navbar-nav
+							li
+								a(href='/') Home
+							li.active
+								a(href='about') About
+							li
+								a(href= 'contact') Contact
+							
+								
+							
+	// Carousel
+	// ==================================================
+	//+carousel("myCarousel",[{image:"../images/carousel1.jpg",h1:"Example headline",p:"Note: If you're viewing this page via a codefile:///code URL, the 'next' and 'previous' Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.",button:{caption:"Sign up today",url:"#"}},{image:"../images/carousel2.jpg",h1:"Another example headline",p:"Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.",button:{caption:"Learn more",url:"#"}},	{image:"../images/carousel3.jpg",h1:"One more for good measure.",p:"Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.",button:{caption:"Browse gallery",url:"#"}}])
+	//  Marketing messaging and featurettes
+	//  ==================================================
+	// Wrap the rest of the page in another container to center all the content.
+	.container.marketing
+		// Three columns of text below the carousel
+		.row
+				.col-lg-4
+					//img.img-circle(src='../images/usf.jpg', alt='Generic placeholder image', width='140', height='140')
+					h2 FADI!!!!!!! 
+					p hey i am student 
+					form.form-inline(role='form')
+						.form-group
+						label(for='zip')
+							input#zip.form-control(type='zip', placeholder= 'Enter zip code here')
+					p
+						a.btn.btn-primary(href='result', role='button') Search 
+							span.glyphicon.glyphicon-search
+	//BEGIN FEAUTURETTE
+	.container.marketing
+		hr.featurette-divider
+		.row.featurette
+			.col-md-7
+				h2.featurette-heading
+					| Contact Information
+					span.text-muted
+				p.lead
+					ul
+						li	Phone: 
+						li	E-mail: 
+			.col-md-5
+				//img.featurette-image.img-responsive.center-block(src='../images/existentialism.jpg', alt='existentialism', width='180px', height='180px')
+		hr.featurette-divider
+		// /END FEATURETTES
+		
+		// FOOTER
+		footer
+			p.pull-right
+				a(href='#') Back to top
+			p
+				| © 2016 Built with node.js 
+				a(href='#') Privacy
+				|  · 
+				a(href='#') Terms
